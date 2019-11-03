@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Jeecg-Boot 快速开发平台
 ===============
 
@@ -91,15 +90,15 @@ QueryWrapper<?> queryWrapper = QueryGenerator.initQueryWrapper(?, req.getParamet
 
 
 #### 二、AutoPoi(EXCEL工具类-EasyPOI衍变升级重构版本）
- 
+
   [在线文档](https://github.com/zhangdaiscott/autopoi)
-  
+
 
 
 #### 三、代码生成器
 
 > 功能说明：   一键生成的代码（包括：controller、service、dao、mapper、entity、vue）
- 
+
  - 模板位置： src/main/resources/jeecg/code-template
  - 技术文档： http://doc.jeecg.com
 
@@ -111,12 +110,12 @@ QueryWrapper<?> queryWrapper = QueryGenerator.initQueryWrapper(?, req.getParamet
 ![输入图片说明](https://static.oschina.net/uploads/img/201904/19191836_eGkQ.png "在这里输入图片标题")
 
 1.引入排重接口,代码如下:  
- 
+
 ```
 import { duplicateCheck } from '@/api/api'
-  ```
+```
 2.找到编码必填校验规则的前端代码,代码如下:  
-  
+
 ```
 <a-input placeholder="请输入编码" v-decorator="['code', validatorRules.code ]"/>
 
@@ -126,15 +125,15 @@ code: {
               {validator: this.validateCode}
             ]
           },
-  ```
+```
 3.找到rules里validator对应的方法在哪里,然后使用第一步中引入的排重校验接口.  
   以用户online表单编码为示例,其中四个必传的参数有:  
     
 ```
   {tableName:表名,fieldName:字段名,fieldVal:字段值,dataId:表的主键},
-  ```
+```
  具体使用代码如下:  
- 
+
 ```
     validateCode(rule, value, callback){
         let pattern = /^[a-z|A-Z][a-z|A-Z|\d|_|-]{0,}$/;
@@ -157,7 +156,3 @@ code: {
         }
       },
 ```
-=======
-# jeecg-boot
-jeecgboot实例代码
->>>>>>> 7c8d70ba7c9b8a01c5b023ea226277219028471a
