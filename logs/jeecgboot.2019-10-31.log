@@ -1,0 +1,763 @@
+2019-10-31 00:10:35.289 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on LINSK with PID 10308 (D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system\target\classes started by 50308 in D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system)
+2019-10-31 00:10:35.293 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-10-31 00:10:38.870 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 00:10:38.874 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 00:10:39.083 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 185ms. Found 0 repository interfaces.
+2019-10-31 00:10:39.679 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$9570a3c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:39.792 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.147 [main] INFO  org.jeecg.config.ShiroConfig:188 - ===============(1)创建缓存管理器RedisCacheManager
+2019-10-31 00:10:40.149 [main] INFO  org.jeecg.config.ShiroConfig:206 - ===============(2)创建RedisManager,连接Redis..URL= 127.0.0.1:6379
+2019-10-31 00:10:40.152 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.155 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.269 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$756b3a2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.520 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.530 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$def9aafb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.547 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.559 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.595 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.608 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$8a84f874] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:40.984 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:41.172 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:41.190 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$e03f2b0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:41.243 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$888417da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:41.252 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:10:41.807 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-10-31 00:10:41.832 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:10:41.848 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-10-31 00:10:41.849 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-10-31 00:10:41.861 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;D:\tools\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;D:\tools\mysql5.6\mysql-5.6.43-winx64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\tools\erlang\erl10.5\bin;D:\tools\Git\cmd;D:\tools\yarn\bin;D:\tools\nodejs\;C:\Users\50308\AppData\Local\Microsoft\WindowsApps;C:\Users\50308\AppData\Local\Yarn\.bin;D:\tools\nodejs\node_global;;D:\tools\eclipse;;.]
+2019-10-31 00:10:42.063 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-10-31 00:10:42.064 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 6667 ms
+2019-10-31 00:10:42.618 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:113 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-10-31 00:10:43.049 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1,master} inited
+2019-10-31 00:10:43.050 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:203 - 初始共加载 1 个数据源
+2019-10-31 00:10:43.051 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:142 - 动态数据源-加载 master 成功
+2019-10-31 00:10:43.051 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:212 - 当前的默认数据源是单数据源，数据源名为 master
+2019-10-31 00:10:47.822 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-10-31 00:10:47.840 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-31 00:10:47.840 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-10-31 00:10:47.845 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-10-31 00:10:47.848 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-10-31 00:10:47.849 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-10-31 00:10:47.849 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-31 00:10:47.850 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-10-31 00:10:47.850 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@34d11c92
+2019-10-31 00:10:49.868 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-31 00:10:50.090 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 00:10:50.427 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 00:10:51.512 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-10-31 00:10:51.544 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-10-31 00:10:51.618 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-10-31 00:10:51.875 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2019-10-31 00:10:51.877 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_1
+2019-10-31 00:10:51.879 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_1
+2019-10-31 00:10:51.881 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_1
+2019-10-31 00:10:51.883 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_1
+2019-10-31 00:10:51.904 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-10-31 00:10:52.126 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-10-31 00:10:52.134 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-10-31 00:10:52.134 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-10-31 00:10:52.136 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-10-31 00:10:52.138 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-10-31 00:10:52.140 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-31 00:10:52.158 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:10:52.180 [main] ERROR org.apache.catalina.util.LifecycleBase:175 - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.jeecg.JeecgApplication.main(JeecgApplication.java:21)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-10-31 00:10:52.187 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Pausing ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:10:52.188 [main] INFO  org.apache.catalina.core.StandardService:173 - Stopping service [Tomcat]
+2019-10-31 00:10:52.192 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase:173 - The web application [jeecg-boot] appears to have started a thread named [Druid-ConnectionPool-Create-1450133081] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2672)
+2019-10-31 00:10:52.193 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase:173 - The web application [jeecg-boot] appears to have started a thread named [Druid-ConnectionPool-Destroy-1450133081] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2768)
+2019-10-31 00:10:52.197 [main] INFO  org.apache.catalina.util.LifecycleBase:173 - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-10-31 00:10:52.197 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:10:52.198 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Destroying ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:10:52.203 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-31 00:10:52.205 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-10-31 00:10:52.210 [main] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-31 00:10:52.212 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-31 00:10:52.215 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:844 - Shutting down Quartz Scheduler
+2019-10-31 00:10:52.215 [main] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-10-31 00:10:52.215 [main] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-10-31 00:10:52.216 [main] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-10-31 00:10:52.221 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:182 - closing dynamicDatasource  ing....
+2019-10-31 00:10:52.223 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1948 - {dataSource-1} closing ...
+2019-10-31 00:10:52.226 [main] INFO  com.alibaba.druid.pool.DruidDataSource:2020 - {dataSource-1} closed
+2019-10-31 00:13:27.850 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on LINSK with PID 18140 (D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system\target\classes started by 50308 in D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system)
+2019-10-31 00:13:27.855 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-10-31 00:13:30.001 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 00:13:30.006 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 00:13:30.275 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 247ms. Found 0 repository interfaces.
+2019-10-31 00:13:30.926 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$40e24a98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.061 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.506 [main] INFO  org.jeecg.config.ShiroConfig:188 - ===============(1)创建缓存管理器RedisCacheManager
+2019-10-31 00:13:31.508 [main] INFO  org.jeecg.config.ShiroConfig:206 - ===============(2)创建RedisManager,连接Redis..URL= 127.0.0.1:6379
+2019-10-31 00:13:31.511 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.516 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.565 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.657 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$20dce102] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.874 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.880 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$8a6b51d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.891 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.898 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.923 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:31.933 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$35f69f4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:32.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:32.311 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:32.331 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$8bb0d1e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:32.382 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$33f5beb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:32.389 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:13:32.898 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-10-31 00:13:32.918 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:13:32.935 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-10-31 00:13:32.935 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-10-31 00:13:32.950 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;D:\tools\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;D:\tools\mysql5.6\mysql-5.6.43-winx64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\tools\erlang\erl10.5\bin;D:\tools\Git\cmd;D:\tools\yarn\bin;D:\tools\nodejs\;C:\Users\50308\AppData\Local\Microsoft\WindowsApps;C:\Users\50308\AppData\Local\Yarn\.bin;D:\tools\nodejs\node_global;;D:\tools\eclipse;;.]
+2019-10-31 00:13:33.158 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-10-31 00:13:33.159 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 5222 ms
+2019-10-31 00:13:33.782 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:113 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-10-31 00:13:34.276 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1,master} inited
+2019-10-31 00:13:34.277 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:203 - 初始共加载 1 个数据源
+2019-10-31 00:13:34.278 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:142 - 动态数据源-加载 master 成功
+2019-10-31 00:13:34.279 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:212 - 当前的默认数据源是单数据源，数据源名为 master
+2019-10-31 00:13:38.602 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-10-31 00:13:38.622 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-31 00:13:38.623 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-10-31 00:13:38.628 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-10-31 00:13:38.630 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-10-31 00:13:38.632 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-10-31 00:13:38.632 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-31 00:13:38.633 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-10-31 00:13:38.633 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5cdc8499
+2019-10-31 00:13:40.857 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-31 00:13:41.118 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 00:13:41.479 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 00:13:42.754 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-10-31 00:13:42.802 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-10-31 00:13:42.900 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-10-31 00:13:43.270 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2019-10-31 00:13:43.273 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_1
+2019-10-31 00:13:43.276 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_1
+2019-10-31 00:13:43.280 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_1
+2019-10-31 00:13:43.284 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_1
+2019-10-31 00:13:43.320 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-10-31 00:13:43.617 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-10-31 00:13:43.629 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-10-31 00:13:43.629 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-10-31 00:13:43.631 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-10-31 00:13:43.634 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-10-31 00:13:43.636 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-31 00:13:43.662 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:13:43.703 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path '/jeecg-boot'
+2019-10-31 00:13:43.706 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 16.492 seconds (JVM running for 17.023)
+2019-10-31 00:13:43.728 [main] INFO  org.jeecg.JeecgApplication:26 - 
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://192.168.249.1:8080/jeecg-boot/
+	swagger-ui: 	http://192.168.249.1:8080/jeecg-boot/swagger-ui.html
+	Doc: 		http://192.168.249.1:8080/jeecg-boot/doc.html
+----------------------------------------------------------
+2019-10-31 00:13:52.829 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 00:13:52.829 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-10-31 00:13:52.872 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 42 ms
+2019-10-31 00:13:54.771 [http-nio-8080-exec-2] INFO  org.jeecg.modules.shiro.authc.ShiroRealm:97 - ————————身份认证失败——————————IP地址:  192.168.249.1
+2019-10-31 00:13:54.782 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: token为空!
+	at org.jeecg.modules.shiro.authc.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:98)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.executeLogin(JwtFilter.java:51)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.isAccessAllowed(JwtFilter.java:34)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.preHandle(JwtFilter.java:71)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-31 00:14:25.332 [http-nio-8080-exec-8] INFO  org.jeecg.modules.shiro.authc.ShiroRealm:97 - ————————身份认证失败——————————IP地址:  0:0:0:0:0:0:0:1
+2019-10-31 00:14:25.334 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: token为空!
+	at org.jeecg.modules.shiro.authc.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:98)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.executeLogin(JwtFilter.java:51)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.isAccessAllowed(JwtFilter.java:34)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.preHandle(JwtFilter.java:71)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-31 00:18:35.068 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on LINSK with PID 17568 (D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system\target\classes started by 50308 in D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system)
+2019-10-31 00:18:35.073 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-10-31 00:18:37.796 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 00:18:37.803 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 00:18:38.061 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 231ms. Found 0 repository interfaces.
+2019-10-31 00:18:38.709 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$b257971a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:38.864 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.291 [main] INFO  org.jeecg.config.ShiroConfig:188 - ===============(1)创建缓存管理器RedisCacheManager
+2019-10-31 00:18:39.294 [main] INFO  org.jeecg.config.ShiroConfig:206 - ===============(2)创建RedisManager,连接Redis..URL= 127.0.0.1:6379
+2019-10-31 00:18:39.297 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.302 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.366 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.506 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$92522d84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.798 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.809 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$fbe09e55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.825 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.835 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.870 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:39.885 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$a76bebce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:40.212 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:40.369 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:40.396 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$fd261e64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:40.466 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$a56b0b34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:40.478 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:18:41.107 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-10-31 00:18:41.142 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:18:41.167 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-10-31 00:18:41.169 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-10-31 00:18:41.190 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;D:\tools\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;D:\tools\mysql5.6\mysql-5.6.43-winx64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\tools\erlang\erl10.5\bin;D:\tools\Git\cmd;D:\tools\yarn\bin;D:\tools\nodejs\;C:\Users\50308\AppData\Local\Microsoft\WindowsApps;C:\Users\50308\AppData\Local\Yarn\.bin;D:\tools\nodejs\node_global;;D:\tools\eclipse;;.]
+2019-10-31 00:18:41.445 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-10-31 00:18:41.446 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 6278 ms
+2019-10-31 00:18:42.126 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:113 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-10-31 00:18:42.659 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1,master} inited
+2019-10-31 00:18:42.660 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:203 - 初始共加载 1 个数据源
+2019-10-31 00:18:42.661 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:142 - 动态数据源-加载 master 成功
+2019-10-31 00:18:42.661 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:212 - 当前的默认数据源是单数据源，数据源名为 master
+2019-10-31 00:18:48.348 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-10-31 00:18:48.376 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-31 00:18:48.377 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-10-31 00:18:48.382 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-10-31 00:18:48.389 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-10-31 00:18:48.391 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-10-31 00:18:48.392 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-31 00:18:48.392 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-10-31 00:18:48.393 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4deca78
+2019-10-31 00:18:51.126 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-31 00:18:51.403 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 00:18:51.916 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 00:18:53.455 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-10-31 00:18:53.508 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-10-31 00:18:53.629 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-10-31 00:18:54.014 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2019-10-31 00:18:54.017 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_1
+2019-10-31 00:18:54.023 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_1
+2019-10-31 00:18:54.028 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_1
+2019-10-31 00:18:54.032 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_1
+2019-10-31 00:18:54.069 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-10-31 00:18:54.382 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-10-31 00:18:54.393 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-10-31 00:18:54.393 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-10-31 00:18:54.397 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-10-31 00:18:54.399 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-10-31 00:18:54.400 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-31 00:18:54.429 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:18:54.474 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path '/jeecg-boot'
+2019-10-31 00:18:54.477 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 20.348 seconds (JVM running for 20.971)
+2019-10-31 00:18:54.501 [main] INFO  org.jeecg.JeecgApplication:26 - 
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://192.168.249.1:8080/jeecg-boot/
+	swagger-ui: 	http://192.168.249.1:8080/jeecg-boot/swagger-ui.html
+	Doc: 		http://192.168.249.1:8080/jeecg-boot/doc.html
+----------------------------------------------------------
+2019-10-31 00:19:06.506 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 00:19:06.508 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-10-31 00:19:06.539 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 31 ms
+2019-10-31 00:19:07.411 [http-nio-8080-exec-7] INFO  org.jeecg.modules.shiro.authc.ShiroRealm:97 - ————————身份认证失败——————————IP地址:  0:0:0:0:0:0:0:1
+2019-10-31 00:19:07.422 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: token为空!
+	at org.jeecg.modules.shiro.authc.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:98)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.executeLogin(JwtFilter.java:51)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.isAccessAllowed(JwtFilter.java:34)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.preHandle(JwtFilter.java:71)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-31 00:19:42.281 [http-nio-8080-exec-7] INFO  org.jeecg.modules.shiro.authc.ShiroRealm:97 - ————————身份认证失败——————————IP地址:  0:0:0:0:0:0:0:1
+2019-10-31 00:19:42.285 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: token为空!
+	at org.jeecg.modules.shiro.authc.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:98)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.executeLogin(JwtFilter.java:51)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.isAccessAllowed(JwtFilter.java:34)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.preHandle(JwtFilter.java:71)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-31 00:31:01.692 [main] INFO  org.jeecg.JeecgApplication:50 - Starting JeecgApplication on LINSK with PID 20388 (D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system\target\classes started by 50308 in D:\dev\project\workspace\jeecg-boot\jeecg-boot-module-system)
+2019-10-31 00:31:01.698 [main] INFO  org.jeecg.JeecgApplication:679 - The following profiles are active: dev
+2019-10-31 00:31:04.298 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-31 00:31:04.303 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-31 00:31:04.511 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 181ms. Found 0 repository interfaces.
+2019-10-31 00:31:05.195 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroConfig' of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$2b65a60e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:05.327 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'shiroRealm' of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:05.881 [main] INFO  org.jeecg.config.ShiroConfig:188 - ===============(1)创建缓存管理器RedisCacheManager
+2019-10-31 00:31:05.886 [main] INFO  org.jeecg.config.ShiroConfig:206 - ===============(2)创建RedisManager,连接Redis..URL= 127.0.0.1:6379
+2019-10-31 00:31:05.892 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:05.901 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:05.980 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:06.144 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b603c78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:06.501 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:06.511 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$74eead49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:06.530 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:06.545 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:06.588 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:06.608 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$2079fac2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:07.022 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:07.231 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:07.258 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$76342d58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:07.328 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$1e791a28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:07.340 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-31 00:31:08.118 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-10-31 00:31:08.148 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:31:08.171 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2019-10-31 00:31:08.172 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-10-31 00:31:08.190 [main] INFO  org.apache.catalina.core.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;D:\tools\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;D:\tools\mysql5.6\mysql-5.6.43-winx64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\tools\erlang\erl10.5\bin;D:\tools\Git\cmd;D:\tools\yarn\bin;D:\tools\nodejs\;C:\Users\50308\AppData\Local\Microsoft\WindowsApps;C:\Users\50308\AppData\Local\Yarn\.bin;D:\tools\nodejs\node_global;;D:\tools\eclipse;;.]
+2019-10-31 00:31:08.475 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring embedded WebApplicationContext
+2019-10-31 00:31:08.475 [main] INFO  org.springframework.web.context.ContextLoader:296 - Root WebApplicationContext: initialization completed in 6673 ms
+2019-10-31 00:31:09.153 [main] INFO  c.b.dynamic.datasource.DynamicDataSourceCreator:113 - 动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置
+2019-10-31 00:31:09.694 [main] INFO  com.alibaba.druid.pool.DruidDataSource:1003 - {dataSource-1,master} inited
+2019-10-31 00:31:09.694 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:203 - 初始共加载 1 个数据源
+2019-10-31 00:31:09.696 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:142 - 动态数据源-加载 master 成功
+2019-10-31 00:31:09.696 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource:212 - 当前的默认数据源是单数据源，数据源名为 master
+2019-10-31 00:31:14.578 [main] INFO  org.quartz.impl.StdSchedulerFactory:1208 - Using default implementation for ThreadExecutor
+2019-10-31 00:31:14.600 [main] INFO  org.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-10-31 00:31:14.601 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.0 created.
+2019-10-31 00:31:14.607 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:672 - Using db table-based data access locking (synchronization).
+2019-10-31 00:31:14.611 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:145 - JobStoreCMT initialized.
+2019-10-31 00:31:14.613 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-10-31 00:31:14.613 [main] INFO  org.quartz.impl.StdSchedulerFactory:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-10-31 00:31:14.613 [main] INFO  org.quartz.impl.StdSchedulerFactory:1366 - Quartz scheduler version: 2.3.0
+2019-10-31 00:31:14.614 [main] INFO  org.quartz.core.QuartzScheduler:2287 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@691eb389
+2019-10-31 00:31:17.148 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-31 00:31:17.411 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-10-31 00:31:17.842 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-31 00:31:19.369 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:160 - Context refreshed
+2019-10-31 00:31:19.415 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper:163 - Found 1 custom documentation plugin(s)
+2019-10-31 00:31:19.520 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner:41 - Scanning for api listing references
+2019-10-31 00:31:19.869 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2019-10-31 00:31:19.872 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_1
+2019-10-31 00:31:19.875 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_1
+2019-10-31 00:31:19.879 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_1
+2019-10-31 00:31:19.882 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_1
+2019-10-31 00:31:19.954 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_2
+2019-10-31 00:31:19.957 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteUsingDELETE_2
+2019-10-31 00:31:19.960 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: deleteBatchUsingDELETE_2
+2019-10-31 00:31:19.964 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: editUsingPUT_2
+2019-10-31 00:31:19.967 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryByIdUsingGET_2
+2019-10-31 00:31:19.987 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator:40 - Generating unique operation named: queryPageListUsingGET_1
+2019-10-31 00:31:20.005 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean:726 - Starting Quartz Scheduler now
+2019-10-31 00:31:20.310 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:866 - Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-10-31 00:31:20.321 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:876 - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-10-31 00:31:20.321 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:889 - Recovery complete.
+2019-10-31 00:31:20.324 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:896 - Removed 0 'complete' triggers.
+2019-10-31 00:31:20.327 [main] INFO  o.s.scheduling.quartz.LocalDataSourceJobStore:901 - Removed 0 stale fired job entries.
+2019-10-31 00:31:20.328 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-10-31 00:31:20.353 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-31 00:31:20.388 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path '/jeecg-boot'
+2019-10-31 00:31:20.391 [main] INFO  org.jeecg.JeecgApplication:59 - Started JeecgApplication in 19.518 seconds (JVM running for 20.12)
+2019-10-31 00:31:20.413 [main] INFO  org.jeecg.JeecgApplication:26 - 
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://192.168.249.1:8080/jeecg-boot/
+	swagger-ui: 	http://192.168.249.1:8080/jeecg-boot/swagger-ui.html
+	Doc: 		http://192.168.249.1:8080/jeecg-boot/doc.html
+----------------------------------------------------------
+2019-10-31 00:31:48.913 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jeecg-boot]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-31 00:31:48.913 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-10-31 00:31:48.931 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:546 - Completed initialization in 18 ms
+2019-10-31 00:31:49.183 [http-nio-8080-exec-5] INFO  org.jeecg.modules.shiro.authc.ShiroRealm:97 - ————————身份认证失败——————————IP地址:  0:0:0:0:0:0:0:1
+2019-10-31 00:31:49.191 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: token为空!
+	at org.jeecg.modules.shiro.authc.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:98)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.executeLogin(JwtFilter.java:51)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.isAccessAllowed(JwtFilter.java:34)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178)
+	at org.jeecg.modules.shiro.authc.aop.JwtFilter.preHandle(JwtFilter.java:71)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
